@@ -71,7 +71,7 @@ Requiere Docker y Docker Compose.
 > **Importante — configuración centralizada:** el repositorio de configuración (`sige-config-repo`) es local y **no forma parte de este repositorio** (se sirve al Config Server vía `file://`). Hoy `docker-compose.yml` lo monta desde una ruta fija (`C:/Users/vicen/sige-config-repo`, servicio `config-server`). Para reproducir el entorno en otra máquina hay que crear ese repositorio Git local (rama `main`) con el `.yml` de cada servicio y ajustar la ruta del volumen en el compose. Dejar esto reproducible con plantillas está en el roadmap.
 
 ```bash
-git clone https://github.com/ViceAsd18/SIGE.git
+git clone https://github.com/vicen2006/SIGE.git
 cd SIGE
 docker compose up -d
 ```
